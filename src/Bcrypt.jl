@@ -71,7 +71,7 @@ GenerateFromPassword(password::String, cost::Int = DefaultCost) = GenerateFromPa
 		return false
 	end
 end
-CompareHashAndPassword(hashedPassword::String, password::String) = CompareHashAndPassword(Array{UInt8, 1}(hashedPassword), Array{UInt8, 1}(password))
+CompareHashAndPassword(hashedPassword::AbstractString, password::AbstractString) = CompareHashAndPassword(Array{UInt8, 1}(hashedPassword), Array{UInt8, 1}(password))
 
 @inline function constantTimeCompare(a::AbstractArray{UInt8, 1}, b::Array{UInt8, 1}) :: Int
 	length(a) != length(b) && return 0

@@ -1,23 +1,31 @@
 # This file is machine-generated - editing it directly is not advised
 
-[[Base64]]
+julia_version = "1.8.5"
+manifest_format = "2.0"
+project_hash = "7ee09b3dc0cf1f0a0c299b6bb6dc6e029cb6839c"
+
+[[deps.Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
-[[Blowfish]]
+[[deps.Blowfish]]
 git-tree-sha1 = "7f2e521113281814cdca9508ef4414c3dfabc0d8"
 uuid = "4a48ec48-d94f-48cc-b069-74d6d3e6e633"
 version = "0.1.1"
 
-[[Printf]]
+[[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 
-[[Random]]
-deps = ["Serialization"]
+[[deps.Random]]
+deps = ["SHA", "Serialization"]
 uuid = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 
-[[Serialization]]
+[[deps.SHA]]
+uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+version = "0.7.0"
+
+[[deps.Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 
-[[Unicode]]
+[[deps.Unicode]]
 uuid = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
